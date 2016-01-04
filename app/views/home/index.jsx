@@ -16,7 +16,6 @@ export default class HomeContainer extends Component {
   render () {
     return <div className={classNames.home}>
       <Title/>
-      <About/>
       <Artists/>
       <Gear/>
       <div className={classNames.footer}>

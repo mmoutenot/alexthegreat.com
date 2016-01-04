@@ -114,88 +114,89 @@ export default class Gear extends Component {
           <div className={classNames.sliderImage} style={{backgroundImage: `url(${ backgroundSrc })`}} key={i}/>
         )}
       </Slider>
-      <div className={classNames.gearList}>
-        <div className={classNames.gearSection}>
-          <h4>Digital</h4>
-          <ul>
-            {DIGITAL.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+      <div className={classNames.gearContainer}>
+        <div className={classNames.gearList}>
+          <div className={classNames.gearSection}>
+            <h4>Digital</h4>
+            <ul>
+              {DIGITAL.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Analog</h4>
-          <ul>
-            {ANALOG.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>Analog</h4>
+            <ul>
+              {ANALOG.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Gear</h4>
-          <ul>
-            {GEAR.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>Mics</h4>
+            <ul>
+              {MICS.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Mics</h4>
-          <ul>
-            {MICS.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>Keyboards</h4>
+            <ul>
+              {KEYBOARDS.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Keyboards</h4>
-          <ul>
-            {KEYBOARDS.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>Guitars & Basses</h4>
+            <ul>
+              {GUITARS_BASSES.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Guitars & Basses</h4>
-          <ul>
-            {GUITARS_BASSES.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>Drums</h4>
+            <ul>
+              {DRUMS.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Drums</h4>
-          <ul>
-            {DRUMS.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>Amps</h4>
+            <ul>
+              {AMPS.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>Amps</h4>
-          <ul>
-            {AMPS.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
-        </div>
+          <div className={classNames.gearSection}>
+            <h4>More Instruments</h4>
+            <ul>
+              {MORE_INSTRUMENTS.map((gearItem, i) =>
+                <li key={i}>{gearItem}</li>
+              )}
+            </ul>
+          </div>
 
-        <div className={classNames.gearSection}>
-          <h4>More Instruments</h4>
-          <ul>
-            {MORE_INSTRUMENTS.map((gearItem, i) =>
-              <li key={i}>{gearItem}</li>
-            )}
-          </ul>
+        </div>
+        <div className={classNames.miscGearSection}>
+          <h4>Misc Gear</h4>
+          {GEAR.map((gearItem, i) =>
+            <span key={i}>{gearItem} • </span>
+          )}
         </div>
       </div>
+
     </div>
   }
 }

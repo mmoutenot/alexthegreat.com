@@ -109,10 +109,13 @@ export default class Gear extends Component {
           <div className={classNames.sliderImage} style={{backgroundImage: `url(${ backgroundSrc })`}} key={i}/>
         )}
       </Slider>
-      <div className={classNames.artistList}>
-        {ARTISTS.map((artist, i) =>
-          <div key={i}>{artist}</div>
-        )}
+      <div className={classNames.artistListContainer}>
+        <div className={classNames.artistList}>
+          <h2>Artists</h2>
+          {ARTISTS.map((artist, i) =>
+            <span key={i}>{artist} • </span>
+          )}
+        </div>
       </div>
     </div>
   }
