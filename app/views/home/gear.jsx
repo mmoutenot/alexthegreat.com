@@ -66,7 +66,7 @@ const MORE_INSTRUMENTS = [
 ];
 
 const BACKGROUNDS = [
-  require("app/assets/images/tape.jpeg")
+  require("app/assets/images/control.jpg")
 ];
 
 export default class Gear extends Component {

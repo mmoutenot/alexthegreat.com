@@ -30,6 +30,8 @@ export default class Title extends Component {
     return <div className={classNames.titlePage}>
       <div className={classNames.titleContainer}>
         <h1>Alex the Great</h1>
+        <h2>recording</h2>
+        <hr/>
         <div className={classNames.aboutContainer}>
           <p>
             Alex the Great Recording is a commercial studio owned by Nashville producers Brad Jones and Robin Eaton.
@@ -50,8 +52,7 @@ export default class Title extends Component {
         width={spotifyDims.width}
         height={spotifyDims.height}
         frameBorder="0"
-        allowTransparency="true"
-        style={{ display: 'none' }}>
+        allowTransparency="true">
       </iframe>
     </div>;
   }

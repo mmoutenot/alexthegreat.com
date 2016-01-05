@@ -8,17 +8,45 @@
     height 840px
 
 .titlePage
-  background-image url("app/assets/images/guitars.jpeg")
+  display flex
+  align-items center
+  justify-content center
+  background-image url("app/assets/images/pianoRoom.jpg")
 
   .titleContainer
     display flex
     align-items center
     justify-content center
     flex-direction column
-    position absolute
-    height 100%
-    width 100%
     text-align center
+    color white
+
+    h1
+      font-size 8rem
+
+    @media screen and (max-width 850px)
+      h1
+        font-size 3.8rem
+
+      h2
+        font-size 1.5rem
+        letter-spacing 2rem
+        padding-left 1rem
+
+    @media screen and (min-width 850px)
+      h2
+        font-size 2.5rem
+        letter-spacing 4rem
+        padding-left 4rem
+        margin-top -1rem
+
+    h2
+      font-weight 600
+      color white
+
+    hr
+      width 100%
+      margin-top 1rem
 
   .aboutContainer
     max-width 600px
@@ -33,20 +61,6 @@
       &:hover
         color cornflowerBlue
 
-
-
-  h1
-    font-size 8rem
-
-  @media screen and (max-width 850px)
-    h1
-      font-size 5rem
-
-  h2
-    font-size 2.5rem
-    color white
-    text-shadow 0 .2rem .8rem black
-
   .spotifyPlayer
     position fixed
     top 1rem
@@ -55,31 +69,9 @@
     border none
     box-shadow 0 .2rem .8rem black
 
-.rogerPage
-  background-image url("app/assets/images/light.jpeg")
-  box-shadow inset 0 -30rem 10em rgba(black, .8)
-
-  .contentContainer
-    position absolute
-    left 4rem
-    right 4rem
-    bottom 2rem
-    max-width 800px
-
-  h1
-    color white
-
-  p
-    color white
-
-    a
-      text-decoration underline
-
-  a:hover
-    color CornflowerBlue
 
 .artistPage
-  background-image url("app/assets/images/exterior.jpeg")
+  background-image url("app/assets/images/tileRoom.jpg")
   box-shadow inset 0 -40rem 10em rgba(black, .8)
 
   .artistListContainer
@@ -97,12 +89,16 @@
     text-shadow 1px 1px 5px rgba(black, .4)
 
     h2
-      color black
+      color white
+      @media screen and (max-width 850px)
+        color black
       margin-bottom 8rem
 
 .gearPage
-  height auto
   background-color black
+
+  @media screen and (max-width 850px)
+    height 1400px
 
   .slider
     z-index 0
@@ -136,6 +132,7 @@
     align-items flex-start
     justify-content space-around
     color white
+    text-shadow 1px 1px 5px rgba(black, 0.8)
 
     .gearSection
       z-index 1000
@@ -149,6 +146,7 @@
     position relative
     z-index 1000
     color white
+    text-shadow 1px 1px 5px rgba(black, 0.8)
 
   h4
     font-family monospace
@@ -165,11 +163,13 @@
       color white
 
 .footer
-  background-color black
+  position relative
+  z-index 10
   display flex
   align-items center
   justify-content flex-start
   padding 4rem
+  background-color black
   color white
 
   a:hover

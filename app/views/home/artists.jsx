@@ -72,7 +72,7 @@ const ARTISTS = [
 ];
 
 const BACKGROUNDS = [
-  require("app/assets/images/pingpong.jpeg")
+  require("app/assets/images/pingpong.jpg")
 ];
 
 export default class Gear extends Component {
