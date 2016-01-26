@@ -19,7 +19,7 @@ export default class Title extends Component {
   }
 
   render () {
-    let playlistUrl = "https://embed.spotify.com/?uri=spotify%3Auser%3A12169845727%3Aplaylist%3A5VUu0mJPL6PEG3EZCd9nV6";
+    let playlistUrl = "https://embed.spotify.com/?uri=spotify:user:1219499715:playlist:5npYAt4MlIqarEDIIE6udf";
     let spotifyDims = { width: 300, height: 80 };
     let width = document.body.getBoundingClientRect().width;
 
